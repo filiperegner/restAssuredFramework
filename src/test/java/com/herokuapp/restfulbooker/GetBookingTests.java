@@ -7,7 +7,7 @@ import org.testng.asserts.SoftAssert;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-public class GetBooking {
+public class GetBookingTests {
 
 	@Test
 	public void getBookingTest() {
