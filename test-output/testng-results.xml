@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-29T18:41:53 BRT" name="Default suite" finished-at="2020-07-29T18:41:59 BRT" duration-ms="6070">
+  <suite started-at="2020-07-30T08:48:36 BRT" name="Default suite" finished-at="2020-07-30T08:48:42 BRT" duration-ms="5402">
     <groups>
     </groups>
-    <test started-at="2020-07-29T18:41:53 BRT" name="Default test" finished-at="2020-07-29T18:41:59 BRT" duration-ms="6070">
-      <class name="com.herokuapp.restfulbooker.CreateBookingTests">
-        <test-method signature="createBookingTest()[pri:0, instance:com.herokuapp.restfulbooker.CreateBookingTests@f2ff811]" started-at="2020-07-29T18:41:53 BRT" name="createBookingTest" finished-at="2020-07-29T18:41:59 BRT" duration-ms="6002" status="PASS">
+    <test started-at="2020-07-30T08:48:36 BRT" name="Default test" finished-at="2020-07-30T08:48:42 BRT" duration-ms="5402">
+      <class name="com.herokuapp.restfulbooker.UpdateBookingTests">
+        <test-method signature="updateBookingTest()[pri:0, instance:com.herokuapp.restfulbooker.UpdateBookingTests@f2ff811]" started-at="2020-07-30T08:48:36 BRT" name="updateBookingTest" finished-at="2020-07-30T08:48:42 BRT" duration-ms="5340" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createBookingTest -->
-      </class> <!-- com.herokuapp.restfulbooker.CreateBookingTests -->
+        </test-method> <!-- updateBookingTest -->
+      </class> <!-- com.herokuapp.restfulbooker.UpdateBookingTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
