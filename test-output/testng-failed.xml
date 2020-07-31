@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.herokuapp.restfulbooker.UpdateBookingTests">
+      <class name="com.herokuapp.restfulbooker.DeleteBookingTests">
         <methods>
-          <include name="updateBookingTest"/>
+          <include name="deleteBookingTest"/>
         </methods>
-      </class> <!-- com.herokuapp.restfulbooker.UpdateBookingTests -->
+      </class> <!-- com.herokuapp.restfulbooker.DeleteBookingTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
