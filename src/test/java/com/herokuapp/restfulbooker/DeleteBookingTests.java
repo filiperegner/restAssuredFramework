@@ -2,7 +2,6 @@ package com.herokuapp.restfulbooker;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -23,8 +22,8 @@ public class DeleteBookingTests extends BaseTest {
 
 		// delete booking
 
-		Response responseDelete = RestAssured.given().auth().preemptive().basic("admin", "password123")
-				.contentType(ContentType.JSON).delete("https://restful-booker.herokuapp.com/booking/" + bookingid);
+		Response responseDelete = RestAssured.given(spec).auth().preemptive().basic("admin", "password123")
+				.contentType(ContentType.JSON).delete("/booking/" + bookingid);
 
 		responseDelete.prettyPrint();
 
