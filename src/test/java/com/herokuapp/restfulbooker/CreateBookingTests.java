@@ -4,6 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 public class CreateBookingTests extends BaseTest {
@@ -47,6 +49,33 @@ public class CreateBookingTests extends BaseTest {
 				"additionalneeds in response is not expected");
 
 		softAssert.assertAll();
+
+	}
+
+	@Test
+	public void createBookingWithPOJOTest() {
+
+		// Create body using POJOs
+		Bookingdates bookingdates = new Bookingdates("2020-07-25", "2020-07-29");
+		Booking booking = new Booking("Jim", "Brown", 123, false, bookingdates, "No smoking area");
+
+		// Get response
+		Response response = RestAssured.given(spec).contentType(ContentType.JSON).body(booking).post("/booking");
+
+		response.prettyPrint();
+
+		Bookingid bookingid = response.as(Bookingid.class);
+
+		// verifications
+
+		// Verify response 200
+		Assert.assertEquals(response.getStatusCode(), 200, "Status code should be 200, but it's not");
+
+		System.out.println("Request booking: " + booking.toString());
+		System.out.println("Response booking: " + bookingid.getBooking().toString());
+
+		// Verify All fields
+		Assert.assertEquals(bookingid.getBooking().toString(), booking.toString());
 
 	}
 

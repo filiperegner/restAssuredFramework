@@ -2,20 +2,20 @@
 <testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-04T07:50:54 BRT" name="Default suite" finished-at="2020-08-04T07:51:00 BRT" duration-ms="5463">
+  <suite started-at="2020-08-04T22:30:07 BRT" name="Default suite" finished-at="2020-08-04T22:30:10 BRT" duration-ms="3709">
     <groups>
     </groups>
-    <test started-at="2020-08-04T07:50:54 BRT" name="Default test" finished-at="2020-08-04T07:51:00 BRT" duration-ms="5463">
-      <class name="com.herokuapp.restfulbooker.HealthCheckTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.herokuapp.restfulbooker.HealthCheckTest@671a5887]" started-at="2020-08-04T07:50:54 BRT" name="setUp" finished-at="2020-08-04T07:50:55 BRT" duration-ms="692" status="PASS">
+    <test started-at="2020-08-04T22:30:07 BRT" name="Default test" finished-at="2020-08-04T22:30:10 BRT" duration-ms="3709">
+      <class name="com.herokuapp.restfulbooker.CreateBookingTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.herokuapp.restfulbooker.CreateBookingTests@c03cf28]" started-at="2020-08-04T22:30:07 BRT" name="setUp" finished-at="2020-08-04T22:30:07 BRT" duration-ms="652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="headersAndCookiesTest()[pri:0, instance:com.herokuapp.restfulbooker.HealthCheckTest@671a5887]" started-at="2020-08-04T07:50:55 BRT" name="headersAndCookiesTest" finished-at="2020-08-04T07:51:00 BRT" duration-ms="4707" status="PASS">
+        <test-method signature="createBookingWithPOJOTest()[pri:0, instance:com.herokuapp.restfulbooker.CreateBookingTests@c03cf28]" started-at="2020-08-04T22:30:07 BRT" name="createBookingWithPOJOTest" finished-at="2020-08-04T22:30:10 BRT" duration-ms="3005" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- headersAndCookiesTest -->
-      </class> <!-- com.herokuapp.restfulbooker.HealthCheckTest -->
+        </test-method> <!-- createBookingWithPOJOTest -->
+      </class> <!-- com.herokuapp.restfulbooker.CreateBookingTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
